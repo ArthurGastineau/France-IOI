@@ -6,11 +6,6 @@
 if __name__ == '__main__':
     long_centrale,long_riviere = map(int,input().split())
     forces = [int(i) for i in input().split()]
-    '''temp=forces.copy()
-    for i in range(long_riviere-long_centrale):
-        for j in range(i+1,i+long_centrale):
-            temp[i]+=forces[j]
-    print(max(forces))'''
     maximum=0
     for i in range(long_centrale):
         maximum+=forces[i];
