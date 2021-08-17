@@ -4,7 +4,7 @@
     Date : 17 Aug 2021
 '''
 def solve(cartes):
-    data=[0]*1000000
+    data=[0]*(max(cartes)+1)
     for i in cartes:
         data[i]+=1
         if data[i]==2:
